@@ -1,0 +1,78 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: cursive sans-serif;
+}
+body{
+    height:100vh;
+    background-image: url('https://cdn.pixabay.com/photo/2019/03/29/16/09/love-4089493__480.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#main-header{
+    border-radius: 5px;
+    position:sticky;
+    top:0;
+    
+}
+#header-title{
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px #030202;
+}
+.container{
+    width:50%;
+    margin-top:3em;
+}
+@media screen and(max-width:800px)
+{
+    .container{
+        width:70%;
+    }
+}
+@media screen and(max-width:650px)
+{
+    .container{
+        width:80%;
+    }
+}
+@media screen and(max-width:500px)
+{
+    .container{
+        width:99%;
+    }
+}
+.item{
+    display: flex;
+    flex-direction: row;
+    padding:1rem;
+    border-bottom: 4px solid yellow;
+}
+.content{
+    display:1 1 0%;
+    width:90%;
+}
+.item.content.text{
+    font-size: 1.2rem;
+    width:100%;
+    border-color:transparent;
+}
+.item.content.text:hover{
+    cursor: context-menu;
+}
+.action{
+    display: flex;
+}
+.item.action button{
+    margin-left: 0.5rem;
+    font-weight:700 ;
+    font-size: 0.9rem;
+    padding:2px 6px;
+}
+.to-dos {
+    height: 400px;
+    overflow-y: auto;
+  }
+  
